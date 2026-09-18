@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sucesso{
+            background-color: green;
+            color: white;
+        }
+        .erro{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" placeholder="Seu sabor de sorvete favorito">
+
+    <span id="mensagem"></span>
+
+    <script>
+        const campoTexto = document.querySelector('input')
+        const mensagem = document.querySelector('#mensagem')
+
+        campoTexto.addEventListener('input', ()=>{
+            let digitado = campoTexto.value
+            mensagem.classList.remove('erro')
+            mensagem.classList.remove('erro')
+
+            if (digitado == 'chocolate') {
+                mensagem.innerText = 'Meu sabor de sorvete Favorito!!!'
+                mensagem.classList.add('sucesso')
+            } else if (digitado == 'flocos') {
+                mensagem.innerText = 'Flocos é muito bom!!!'
+                mensagem.classList.add('sucesso')
+            } else if (digitado == 'passas ao rum') {
+                mensagem.innerText = 'Que sabor é esse?'
+                mensagem.classList.add('erro')
+            } else {
+                mensagem.innerText = 'Não temos no cardápio!!'
+                mensagem.classList.add('erro')
+            }
+        })
+    </script>
+
+</body>
+</html>
