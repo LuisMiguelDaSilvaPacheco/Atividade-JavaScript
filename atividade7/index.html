@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="https://www.reddit.com/r/gravityfalls/comments/1av3kdo/why_did_gideon_get_waddles/" width="500">
+
+    <p></p>
+
+    <script>
+
+        let paragrafo = document.querySelector("p")
+
+        let imagem = document.querySelector("img")
+
+        imagem.onclick = clicou
+        imagem.onmouseleave = saiu
+        imagem.onmouseenter = enter
+        imagem.onmousemove = move
+        imagem.onmousedown = down
+
+        function clicou(){
+            paragrafo.innerText = "Para de me cutucar"
+        }
+
+        function saiu(){
+            paragrafo.innerText = "Volta..."
+        }
+
+        function enter(){
+            paragrafo.innerText = "Para de fazer cócegas"
+        }
+
+        function move(){
+            paragrafo.innerText = "Para de me esfregar"
+        }
+        function down(){
+            paragrafo.innerText = "SAIA"
+        }
+    </script>
+</body>
+</html>
