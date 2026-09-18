@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual é o seu nome?</h1>
+    
+    <p>Bem vindo, <span id="nome">???</span><br> Você é o <span id="classe">????</span> <span id="adjetivo">????</span> de <span id="reino">????</span></p>
+    
+    <script>
 
+        let nome = prompt('Qual o seu nome?')
+        let classes = ['Paladino', 'Mago', 'Feiticeiro', 'Espadachim', 'Arqueiro', 'Druida', 'Monge', 'Necromante', 'Bardo', 'Berserker']
+        let adjetivos = ['Vigoroso', 'Valente', 'Implacável', 'Arcano', 'Honrado', 'Glorioso', 'Destemido', 'Místico', 'Poderoso', 'Indomável']
+        let reinos = ['Gondor', 'Valhalla', 'Reinvendell', 'Camelot', 'Asgard', 'Minas Tirith', 'Avalon', 'Erebor', 'Neverwinter', 'Stormwind']
+
+        let nom = document.querySelector('p #nome')
+        let classe = document.querySelector('p #classe')
+        let adjetivo = document.querySelector('p #adjetivo')
+        let reino = document.querySelector('p #reino')
+
+        nom.innerText = nome
+        classe.innerText = classes[Math.floor(Math.random() * 10)]
+        adjetivo.innerText = adjetivos[Math.floor(Math.random() * 10)]
+        reino.innerText = reinos[Math.floor(Math.random() * 10)]
+
+    </script>
+</body>
+</html>
