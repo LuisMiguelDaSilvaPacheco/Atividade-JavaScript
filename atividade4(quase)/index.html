@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button>CLIQUE AQUI</button>
+    <span></span>
+    
+    <script>
+        let botao = document.querySelector('button')
+        let texto = document.querySelector('span')
+        let contador = 0
 
+        botao.onclick = clicou
+        botao.ondblclick = doubleClick
+        botao.onmousemove = roubar
+
+        
+
+        function clicou() {
+            contador = contador + 1
+            texto.innerText = contador
+        }
+        function doubleClick() {
+            contador = contador + 10
+            texto.innerText = contador
+        }
+        function roubar() {
+            contador = contador + 1
+            texto.innerText = contador
+        }
+
+    </script>
+</body>
+</html>
