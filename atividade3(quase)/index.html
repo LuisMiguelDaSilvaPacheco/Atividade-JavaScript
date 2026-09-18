@@ -10,9 +10,8 @@
     <button>BOTAOZÃOOOOO</button>
     <h1></h1>
     
-
     <script>
-        let frases = ["Frase 1", "Frase 2", "Frase 3", "Frase 4"]
+        let frases = ["Você consegue!", "Não desista!", "Plural de capivara é capivárias!", "*Frase muito motivacional*"]
         let cores = ["red", "green", "blue", "black"]
         let tamanhos = ["20px", "25px", "30px", "35px"]
 
@@ -20,25 +19,10 @@
         let botao = document.querySelector("button")
 
         botao.addEventListener('click', ()=>{
-
-            let bgColor = 'rgb(' + Math.random() * 255 + ',' + Math.random() * 255 + ',' + Math.random() * 255 + ')'
-            document.body.style.backgroundColor = bgColor
-
-            for (let index = 0; index < 50; index++) {
-                document.body.style.backgroundColor = 'rgb(255, 0, 0)';
-                document.body.style.backgroundColor = 'rgb(0, 255, 0)';
-                document.body.style.backgroundColor = 'rgb(0, 0, 255)';
-                
-            }
-
-            // texto.innerText = frases[Math.floor(Math.random() * 4)]
-            // texto.style.color = cores[Math.floor(Math.random() * 4)]
-            // texto.style.fontSize = tamanhos[Math.floor(Math.random() * 4)]
-        })
-
-        
-
-        
+            texto.innerText = frases[Math.floor(Math.random() * 4)]
+            texto.style.color = cores[Math.floor(Math.random() * 4)]
+            texto.style.fontSize = tamanhos[Math.floor(Math.random() * 4)]
+        })      
     </script>
 
 
